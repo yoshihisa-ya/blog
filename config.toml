@@ -1,0 +1,21 @@
+baseURL = "https://blog.yamano.dev/"
+languageCode = "ja-jp"
+title = "/var/log/life"
+theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
+googleAnalytics = "G-KP0FSYKJ50"
+enableRobotsTXT = true
+
+[params]
+  rss = "index.xml"
+  recent_posts_number = 10
+
+[[params.ananke_socials]]
+name = "twitter"
+url = "https://twitter.com/yoshihisa_ya"
+
+[[params.ananke_socials]]
+name= "github"
+url= "https://github.com/yoshihisa-ya"
+
+[permalinks]
+  posts = "/posts/:slug/"
