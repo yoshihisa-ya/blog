@@ -15,6 +15,8 @@ tags: [ "linux", "debian", "network" ]
 
 v6プラス(MAP-E) + 固定IP + ひかり電話 の構成です。
 
+記事の末尾に参考にさせていただいた記事をリンクしていますので、そちらもご確認いただければと思います。
+
 ## なぜ Linux ルータを構築するのか
 YAMAHA のルータからリプレースする一番の目的は、ゲートウェイ自身で WireGuard などのグローバル向けサービスを終端することです。
 また、 vnStat などによるトラフィックモニタリングを実施したり、機器ごとのパケットフィルタリング実装を学ばなくて済むように nftables を用いたりすることも目的です。
@@ -514,3 +516,12 @@ table ip nat {
 - クライアント端末ごとのトラフィック量や、DPIを用いたモニタリング
 - ひかり電話の併用として、 NVR510 利用もしくは Asterisk への収容
 - 賃貸の無料インターネットを用いたバックアップ経路の追加
+
+## 参考
+構築にあたり参考にさせていただきました。
+- [Linuxルータでフレッツ光ネクスト（NGN)のIPv6を運用する方法：IPoE（ネイティブ接続）＋ひかり電話無し編 | 指向性メモ - 技術](https://yudai.arielworks.com/memo/2012/05/08/000441)
+- [Linuxルータでフレッツ光ネクスト（NGN)のIPv6を運用する方法：IPoE（ネイティブ接続）＋ひかり電話編 | 指向性メモ - 技術](https://yudai.arielworks.com/memo/2012/05/07/023545)
+- [R86Sのセットアップ](https://zenn.dev/koyashiro/scraps/d05ff8a0ddeeef)
+- [PC Junkie Rev3.0 - 【Network】InterlinkのZOOT NATIVE IPv4固定IP1個をDebianから使う](https://xmms.jp/blog/index.php?entry=entry200812-194208)
+- [光クロスで快適自宅サーバー環境構築 Linuxルーター構築編](https://blog.ingen084.net/posts/20220926-hikari-cross-network2)
+- [UbuntuをMAP-Eルータにする試み - suueiの備忘録](https://www.notr.app/posts/2023/11/ubuntu-as-a-mape-router/)
