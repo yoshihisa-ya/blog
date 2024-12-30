@@ -1,21 +1,31 @@
 baseURL = "https://blog.yamano.dev/"
 languageCode = "ja-jp"
 title = "/var/log/life"
-theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
-googleAnalytics = "G-KP0FSYKJ50"
+theme = ["github.com/theNewDynamic/gohugo-theme-ananke/v2"]
 enableRobotsTXT = true
 
+[services.googleAnalytics]
+id = 'G-KP0FSYKJ50'
+
 [params]
-  rss = "index.xml"
-  recent_posts_number = 10
+rss = "index.xml"
+recent_posts_number = 10
 
-[[params.ananke_socials]]
-name = "twitter"
-url = "https://twitter.com/yoshihisa_ya"
+[params.ananke.social.follow]
+networks = [
+  "rss",
+  "x-twitter",
+  "github",
+]
 
-[[params.ananke_socials]]
-name= "github"
-url= "https://github.com/yoshihisa-ya"
+[params.ananke.social.rss]
+profilelink = "https://blog.yamano.dev/index.xml"
+
+[params.ananke.social.x-twitter]
+username = "yoshihisa_ya"
+
+[params.ananke.social.github]
+username = "yoshihisa-ya"
 
 [permalinks]
-  posts = "/posts/:slug/"
+posts = "/posts/:slug/"
