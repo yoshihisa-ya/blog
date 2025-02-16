@@ -4,6 +4,11 @@ title = "/var/log/life"
 theme = ["github.com/theNewDynamic/gohugo-theme-ananke/v2"]
 enableRobotsTXT = true
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      typographer = false
+
 [services.googleAnalytics]
 id = 'G-KP0FSYKJ50'
 
