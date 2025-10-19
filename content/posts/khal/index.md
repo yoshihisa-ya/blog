@@ -1,5 +1,5 @@
 ---
-title: "kahl + vdirsyncer で Nextcloud のカレンダーを同期する"
+title: "khal + vdirsyncer で Nextcloud のカレンダーを同期する"
 featured_image: ""
 date: 2025-10-19T17:00:00+09:00
 draft: false
